@@ -60,8 +60,33 @@ but you'll have to implement those three above instructions first!
 ## Step 0: IMPORTANT: inventory what is here!
 
 * Make a list of files here.
+README.md
+LS8-spec.md
+LS8-cheatsheet
+FAQ
+cpu.py
+ls8.py 
+
 * Write a short 3-10-word description of what each file does.
+README.md - Day to day overview of tasks
+LS8-spec.md  - spec of what is in the computer
+LS8-cheatsheet - 
+FAQ - question answers
+cpu.py - actual cpu
+ls8.py - import sys and CPU
+
 * Note what has been implemented, and what hasn't.
+not implemented:
+  constructor -  def __init__(self):
+    step 1 - add constructor
+  load - only hardcoded
+  run 
+  `ram_read()` and `ram_write()` 
+
+already implemented:
+  alu
+  trace
+
 * Read this whole file.
 * Skim the spec.
 
