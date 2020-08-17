@@ -10,9 +10,11 @@ otherwise known as LS-8! This is an 8-bit computer with 8-bit memory addressing,
 which is about as simple as it gets.
 
 An 8 bit CPU is one that only has 8 wires available for addresses (specifying
-where something is in memory), computations, and instructions. With 8 bits, our
-CPU has a total of 256 bytes of memory and can only compute values up to 255.
-The CPU could support 256 instructions, as well, but we won't need them.
+where something is in memory), computations, and instructions.
+
+With 8 bits, ourCPU has a total of 256 bytes of memory and can only compute values up to 255.
+
+ The CPU could support 256 instructions, as well, but we won't need them.
 
 For starters, we'll execute code that stores the value 8 in a register,
 then prints it out:
@@ -20,6 +22,7 @@ then prints it out:
 ```
 # print8.ls8: Print the number 8 on the screen
 
+left - either value known as opcode or arguments known as operands
 10000010 # LDI R0,8
 00000000
 00001000

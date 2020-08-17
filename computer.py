@@ -40,7 +40,8 @@ with open(filename) as f:
         line = line.split("#")
 
         try:
-            v = int(line[0])
+            # 2 for base 2
+            v = int(line[0], 2)
         except ValueError:
             continue
 
