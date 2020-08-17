@@ -5,9 +5,19 @@ import sys
 class CPU:
     """Main CPU class."""
 
-    def __init__(self):
+    def __init__(self, current):
         """Construct a new CPU."""
-        pass
+        # 256 bytes of memory 
+        self.memory = [0] * 256
+        #  8 general-purpose registers.
+        self.registers = [0] * 8
+        #PC address of current executing instructions
+        self.PC = self.memory[current]
+        # Instruction Register, copy of instructions
+        self.IR = current
+        # MAR holds memory address reading or writing
+        # MDR Memory Data Register, holds the value to write or the value just read
+        # FL Flags
 
     def load(self):
         """Load a program into memory."""
@@ -26,6 +36,7 @@ class CPU:
             0b00000001, # HLT
         ]
 
+        #put instructions into RAM
         for instruction in program:
             self.ram[address] = instruction
             address += 1
